@@ -1,6 +1,6 @@
 $('.dropdown-menu > a').click(function(){
     $('.dropdown').hide();
-    $(this).siblings('ul').show(500);
+    $(this).siblings('ul').slideDown(500);
     $(this).addClass('active');
 });
 
