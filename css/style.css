@@ -155,3 +155,46 @@ header{
 .jumbotron p{
     color: #95959e
 }
+
+/* STILE SEZIONE CARDS */
+.cards-container{
+    width: 100vw;
+    padding-top: 10%;
+}
+
+.cards{
+    width: 80vw;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards .card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card p{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.card h2{
+    font-size: 6rem;
+    font-weight: lighter;
+    padding: 40px 0;
+}
+.card ul li{
+    font-size: 18px;
+    padding: 15px 0;
+    color: #95959e;
+}
+.card ul li:before {
+  content: '✓';
+  padding-right: 10px;
+  font-weight: bold;
+  color: #3892ed;
+}
