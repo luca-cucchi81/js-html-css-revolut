@@ -45,7 +45,8 @@ header{
     text-transform: uppercase;
     color: #8b95a7;
 }
-.header-left a:hover{
+.header-left a:hover,
+.header-right a:hover{
     color: black;
 }
 
@@ -89,20 +90,37 @@ header{
     flex-direction: column;
     justify-content: center;
     box-shadow: 3px 3px 5px #8b95a7;
+    display: none;
 }
+
+
+.dropdown-menu:nth-child(2) ul{
+    right: 0;
+    width: 120px;
+    display: none;
+    padding: 0 15px;
+}
+
 .dropdown-menu:nth-child(3) ul {
     right: 0;
-    width: 230px;
+    width: 245px;
     padding: 0 15px;
+    display: none;
     background: #ffffff;
 }
-.dropdown-menu:nth-child(n+4) ul {
+
+ .dropdown-menu:nth-child(n+4) ul {
     right: 0;
     width: 180px;
     padding-left: 15px;
+    display: none;
     background: #ffffff;
 }
 
 .dropdown li{
     padding: 10px 0;
+}
+
+.active{
+    color: black!important;
 }
