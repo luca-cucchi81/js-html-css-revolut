@@ -16,6 +16,12 @@
 header{
     width: 100vw;
     height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f3f4f5;
 }
 
 .header-container{
@@ -120,7 +126,32 @@ header{
 .dropdown li{
     padding: 10px 0;
 }
-
+/*classe active da richiamre in jq*/
 .active{
     color: black!important;
+}
+
+/*STILE JUMBOTRON*/
+.jumbotron-container{
+    width: 100vw;
+    margin-top: 80px;
+    padding-top: 100px;
+}
+
+.jumbotron{
+    max-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jumbotron h1{
+    font-size: 4rem;
+    padding-bottom: 20px;
+    color: #191c1f
+}
+
+.jumbotron p{
+    color: #95959e
 }
