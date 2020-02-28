@@ -45,6 +45,10 @@ header{
     text-transform: uppercase;
     color: #8b95a7;
 }
+.header-left a:hover{
+    color: black;
+}
+
 
 /*stile per header destro*/
 .header-right{
@@ -72,4 +76,33 @@ header{
     border-radius: 50px;
     background-color: #eb008d;
     color: #ffffff;
+}
+
+/*stile per dropdown*/
+.dropdown-menu{
+    position: relative;
+}
+.dropdown{
+    position: absolute;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 3px 3px 5px #8b95a7;
+}
+.dropdown-menu:nth-child(3) ul {
+    right: 0;
+    width: 230px;
+    padding: 0 15px;
+    background: #ffffff;
+}
+.dropdown-menu:nth-child(n+4) ul {
+    right: 0;
+    width: 180px;
+    padding-left: 15px;
+    background: #ffffff;
+}
+
+.dropdown li{
+    padding: 10px 0;
 }
