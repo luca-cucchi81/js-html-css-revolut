@@ -76,15 +76,32 @@ header{
     font-weight: 700;
     color: #8b95a7;
 }
-
-#bottone{
-    padding: 10px;
-    border: 1px solid #eb008d;
+#pulse{
+    transition: 1s;
     border-radius: 50px;
     background-color: #eb008d;
     color: #ffffff;
 }
 
+#pulse:hover{
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px #eb008d;
+     }
+     100% {
+          box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+     }
+}
+
+#bottone{
+    padding: 20px;
+    font-size: 16px;
+    color: #ffffff;
+}
 /*stile per dropdown*/
 .dropdown-menu{
     position: relative;
